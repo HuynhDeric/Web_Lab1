@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+.autoSizeFont {
+    font-size: 2.6vw;
+}
+
+header > nav {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 1;
+    justify-content: space-around;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(255, 190, 104);
+    background-color: blanchedalmond;
+    margin-bottom: 2px;
+}
+
+header > nav > a {
+    border-style:inset;
+    border-radius: 5px;
+    border-width: 4px;
+    border-color:burlywood;
+    border-spacing: 10px;
+    font-family: 'Courier Prime', monospace;
+    justify-self: center;
+    margin: 3px;
+    text-align: center;
+    text-decoration: none;
+    width: 20vw;
+}
+
+header > nav > a:hover {
+    border-style: outset;
+    text-decoration: underline;
+}
+
+#homeContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-around;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(255, 190, 104);
+    background-color: blanchedalmond;
+}
+
+footer {
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: rgb(255, 190, 104);
+    border-style: groove;
+    text-align: center;
+    margin-top: 2px;
+    width: auto;
+}
+
+@media screen and ( min-width : 800px ) {
+
+    .autoSizeFont {
+        font-size: 20.8px;
+    }
+
+    header > nav > a {
+        width: 160px;
+    }
+}
