@@ -10,7 +10,6 @@ body {
     border-style: groove;
     border-color: rgb(255, 190, 104);
     background-color: blanchedalmond;
-    margin: 2px;
 }
 
 .centerText {
@@ -83,10 +82,19 @@ header > nav > a:hover {
     justify-content:center;
 }
 
+.hobbyBoxes {
+    width:45vw;
+    height:45vw;
+    border-radius: 4px;
+    border-color: burlywood;
+    border-radius: 5px;
+    border-style: double;
+}
+
 #projectsContainer {
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: repeat(3, auto);
     justify-content:center;
 }
 
@@ -131,16 +139,20 @@ td {
     font-size: 2.2vw;
 }
 
-td:hover {
-    background-color: rgb(234, 207, 167);
-}
-
 .callingAvailable {
     background-color: rgb(134, 232, 123);
 }
 
+.callingAvailable:hover {
+    background-color: rgb(90, 227, 75);
+}
+
 .callingNotAvailable {
     background-color: rgb(250, 85, 85);
+}
+
+.callingNotAvailable:hover {
+    background-color: rgb(237, 61, 61);
 }
 
 footer {
@@ -178,7 +190,7 @@ footer {
         justify-content: center;
     }
 
-    .images, .projectImages {
+    .homeImages, .projectImages, .hobbyBoxes {
         width:320px;
         height:320px;
     }
