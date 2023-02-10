@@ -9,16 +9,80 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="thematicStyling">
             <a id="homeLink" class="autoSizeFont" href="../index.html">Home</a>
             <a id="hobbiesLink" class="autoSizeFont" href="../hobbies/index.html">Hobbies</a>
             <a id="projectsLink" class="autoSizeFont" href="../projects/index.html">Projects</a>
             <a id="contactsLink" class="autoSizeFont" href="#">Contacts</a>
         </nav>
     </header>
-    <section id="container">
+    <section class="contactsContainer thematicStyling">
+        <p>
+            Name: Deric Huynh </br>
+            Email: huynhderic@gmail.com </br>
+            Phone: (780) 699-5862
+        </p>
+        <table id="contactsCallingTable">
+            <thead>
+                <tr>
+                    <td colspan="8">Calling Availability</td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td>Sunday</td>
+                    <td>Monday</td>
+                    <td>Tuesday</td>
+                    <td>Wednesday</td>
+                    <td>Thursday</td>
+                    <td>Friday</td>
+                    <td>Saturday</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2:00pm</td>
+                    <td rowspan="5" class="callingNotAvailable">Not available</td>
+                    <td rowspan="2" class="callingNotAvailable">Not available</td>
+                    <td rowspan="9" class="callingAvailable">Available</td>
+                    <td rowspan="2" class="callingNotAvailable">Not available</td>
+                    <td rowspan="3" class="callingNotAvailable">Not available</td>
+                    <td class="callingNotAvailable">Not Available</td>
+                    <td rowspan="4" class="callingNotAvailable">Not available</td>
+                </tr>
+                <tr>
+                    <td>3:00pm</td>
+                    <td rowspan="8" class="callingAvailable">Available</td>
+                </tr>
+                <tr>
+                    <td>4:00pm</td>
+                    <td rowspan="7" class="callingAvailable">Available</td>
+                    <td rowspan="7" class="callingAvailable">Available</td>
+                </tr>
+                <tr>
+                    <td>5:00pm</td>
+                    <td rowspan="6" class="callingAvailable">Available</td>
+                </tr>
+                <tr>
+                    <td>6:00pm</td>
+                    <td rowspan="5" class="callingAvailable">Available</td>
+                </tr>
+                <tr>
+                    <td>7:00pm</td>
+                    <td rowspan="4" class="callingAvailable">Available</td>
+                </tr>
+                <tr>
+                    <td>8:00pm</td>
+                </tr>
+                <tr>
+                    <td>9:00pm</td>
+                </tr>
+                <tr>
+                    <td>10:00pm</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
-    <footer>
+    <footer class="thematicStyling">
         &copy;Deric Huynh, All rights reserved.</br>
         <script>
             document.write("Last modified on: " + document.lastModified);

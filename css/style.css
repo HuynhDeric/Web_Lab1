@@ -4,6 +4,19 @@ body {
     background-color: antiquewhite;
 }
 
+.thematicStyling {
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(255, 190, 104);
+    background-color: blanchedalmond;
+    margin: 2px;
+}
+
+.centerText {
+    text-align: center;
+}
+
 .autoSizeFont {
     font-size: 2.6vw;
 }
@@ -13,7 +26,6 @@ img {
     border-color: burlywood;
     border-radius: 5px;
     border-style: double;
-    
 }
 
 .homeImages {
@@ -21,17 +33,16 @@ img {
     height:90vw;
 }
 
+.projectImages {
+    width:40vw;
+    height:40vw;
+}
+
 header > nav {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: 1;
     justify-content: center;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: groove;
-    border-color: rgb(255, 190, 104);
-    background-color: blanchedalmond;
-    margin-bottom: 2px;
 }
 
 header > nav > a {
@@ -58,29 +69,81 @@ header > nav > a:hover {
     grid-template-columns: 1 auto;
     grid-template-rows: repeat(4, auto);
     justify-content: space-around;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: groove;
-    border-color: rgb(255, 190, 104);
-    background-color: blanchedalmond;
 }
 
 #homeBottomParagraph {
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: groove;
-    border-color: rgb(255, 190, 104);
-    background-color: blanchedalmond;
     font-size: larger;
     text-align: center;
 }
 
-footer {
+#hobbiesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content:center;
+}
+
+#projectsContainer {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto auto auto;
+    justify-content:center;
+}
+
+.projectParagraphs {
     border-radius: 10px;
     border-width: 5px;
-    border-color: rgb(255, 190, 104);
-    border-style: groove;
+    border-style: double;
+    border-color: rgb(255, 208, 147);
     background-color: blanchedalmond;
+}
+
+#projectElementsContainer {
+    display: grid;
+    margin: 0px 10px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content:right;
+}
+
+.contactsContainer {
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: repeat(2, auto);
+    text-align: center;
+    justify-content: center;
+}
+
+table {
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+tr { 
+    text-align: center;
+}
+
+td {
+    border-collapse: collapse;
+    border-radius: 5px;
+    border-color: burlywood;
+    border-style: solid;
+    font-size: 2.2vw;
+}
+
+td:hover {
+    background-color: rgb(234, 207, 167);
+}
+
+.callingAvailable {
+    background-color: rgb(134, 232, 123);
+}
+
+.callingNotAvailable {
+    background-color: rgb(250, 85, 85);
+}
+
+footer {
     text-align: center;
     margin-top: 2px;
     width: auto;
@@ -100,6 +163,14 @@ footer {
         width: 160px;
     }
 
+    td {
+        border-collapse: collapse;
+        border-radius: 5px;
+        border-color: burlywood;
+        border-style: solid;
+        font-size: 17.6px;
+    }
+
     #homeContainer {
         padding: 1px 1vw;
         grid-template-columns: repeat(2, auto);
@@ -107,8 +178,8 @@ footer {
         justify-content: center;
     }
 
-    .homeImages {
-        width:375px;
-        height:375px;
+    .images, .projectImages {
+        width:320px;
+        height:320px;
     }
 }

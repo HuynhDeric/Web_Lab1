@@ -9,17 +9,38 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="thematicStyling">
             <a id="homeLink" class="autoSizeFont" href="../index.html">Home</a>
             <a id="hobbiesLink" class="autoSizeFont" href="../hobbies/index.html">Hobbies</a>
             <a id="projectsLink" class="autoSizeFont" href="#">Projects</a>
             <a id="contactsLink" class="autoSizeFont" href="../contacts/index.html">Contacts</a>
         </nav>
     </header>
-    <section id="container">
-
+    <section class="thematicStyling" id="projectsContainer">
+        <p class="centerText">
+            Im currently studying Computer Engineering Technology, <br>
+            which focuses on both the hardware and software aspects of computers. 
+        </p>
+        <section id="projectElementsContainer">
+            <p class="projectParagraphs">
+                This is my asteroids project, I remade the arcade game from scratch in java. <br>
+                It relates to my field due to the heavy amount of programming it took to accomplish. <br>
+                This can be viewed on my youtube channel at: <br>
+                <a href="https://www.youtube.com/watch?v=IwzN57SE_xU" target="_blank">https://www.youtube.com/watch?v=IwzN57SE_xU</a>
+            </p>
+            <img class="projectImages" src="../images/AsteroidsProject.png" alt="asteroids picture" width="800px" height="800px">
+            <p class="projectParagraphs">
+                This is my homelab where I live. It's a dell server with a cisco switch and a pdu. <br>
+                It relates to my field as it allows me mess with enterprise grade hardware for maintenance. <br>
+                This cannot be viewed anywhere as it's physical.
+            </p>
+            <img class="projectImages" src="../images/ProjectPicture.png" alt="homelab picture" width="800px" height="800px">
+        </section>
+        <p class="centerText">
+            More projects coming soon!
+        </p>
     </section>
-    <footer>
+    <footer class="thematicStyling">
         &copy;Deric Huynh, All rights reserved.</br>
         <script>
             document.write("Last modified on: " + document.lastModified);
