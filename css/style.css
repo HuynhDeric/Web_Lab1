@@ -71,6 +71,7 @@ header > nav > a:hover {
     border-style: groove;
     border-color: rgb(255, 190, 104);
     background-color: blanchedalmond;
+    font-size: larger;
     text-align: center;
 }
 
