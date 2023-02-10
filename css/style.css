@@ -45,7 +45,7 @@ header > nav {
 }
 
 header > nav > a {
-    border-style:inset;
+    border-style:outset;
     border-radius: 5px;
     border-width: 4px;
     border-color:burlywood;
@@ -59,7 +59,7 @@ header > nav > a {
 }
 
 header > nav > a:hover {
-    border-style: outset;
+    border-style: inset;
     text-decoration: underline;
 }
 
