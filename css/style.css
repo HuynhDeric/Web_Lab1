@@ -13,15 +13,19 @@ img {
     border-color: burlywood;
     border-radius: 5px;
     border-style: double;
-    width:45vw;
-    height:45vw;
+    
+}
+
+.homeImages {
+    width:90vw;
+    height:90vw;
 }
 
 header > nav {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: 1;
-    justify-content: space-around;
+    justify-content: center;
     border-radius: 10px;
     border-width: 5px;
     border-style: groove;
@@ -51,8 +55,8 @@ header > nav > a:hover {
 
 #homeContainer {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1 auto;
+    grid-template-rows: repeat(4, auto);
     justify-content: space-around;
     border-radius: 10px;
     border-width: 5px;
@@ -61,12 +65,21 @@ header > nav > a:hover {
     background-color: blanchedalmond;
 }
 
-footer {
+#homeBottomParagraph {
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(255, 190, 104);
     background-color: blanchedalmond;
+    text-align: center;
+}
+
+footer {
     border-radius: 10px;
     border-width: 5px;
     border-color: rgb(255, 190, 104);
     border-style: groove;
+    background-color: blanchedalmond;
     text-align: center;
     margin-top: 2px;
     width: auto;
@@ -74,11 +87,27 @@ footer {
 
 @media screen and ( min-width : 800px ) {
 
+    body {
+        overflow-y: scroll;
+    }
+
     .autoSizeFont {
         font-size: 20.8px;
     }
 
     header > nav > a {
         width: 160px;
+    }
+
+    #homeContainer {
+        padding: 1px 1vw;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
+    }
+
+    .homeImages {
+        width:375px;
+        height:375px;
     }
 }
