@@ -13,6 +13,8 @@ img {
     border-color: burlywood;
     border-radius: 5px;
     border-style: double;
+    width:fit-content;
+    height:fit-content;
 }
 
 header > nav {
